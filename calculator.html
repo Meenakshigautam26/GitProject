@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+  
+  <div class="container">
+    //<div class="calculator">
+    <form>
+      <div class="display">
+        <input type="text" name="display" id="a">
+        </div>
+      <div>
+        <input type="button" value="AC"onclick="display.value=' '">
+        <input type="button" value="DE" onclick="display.value=display.value.toString().slice(0,-1)">
+        <input type="button" value="." onclick="display.value+='.'">
+        <input type="button" value="/" onclick="display.value+='/'">
+      </div>
+      <div>
+        <input type="button" value="7" onclick="display.value+='7'">
+        <input type="button" value="8" onclick="display.value+='8'">
+        <input type="button" value="9" onclick="display.value+='9'">
+        <input type="button" value="*" onclick="display.value+='*'">
+        
+      </div>
+      <div>
+        <input type="button" value="4" onclick="display.value+='4'">
+        <input type="button" value="5" onclick="display.value+='5'">
+        <input type="button" value="6" onclick="display.value+='6'">
+        <input type="button" value="-" onclick="display.value+='-'">
+        
+      </div>
+      <div>
+        <div>
+          <input type="button" value="1" onclick="display.value+='1'">
+          <input type="button" value="2" onclick="display.value+='2'">
+          <input type="button" value="3" onclick="display.value+='3'">
+          <input type="button" value="+" onclick="display.value+='+'">
+          
+        </div>
+        <div>
+          <input type="button" value="00" onclick="display.value+='00'">
+          <input type="button" value="0" onclick="display.value+='0'">
+          <input type="button" value="=" id="equals" onclick="display.value=eval(display.value)">
+          
+        </div>
+      </div>
+    </form>
+    
+  </div>
+    
+  </div>
+  <script type="text/JavaScript">
+    function add(){
+      var a= document.getElementById("1").value;
+      var b =document.getElementById("2").value;
+      var c=parseInt(1) + parseInt(2);
+      var h1=document.createElement("h1");
+      h1.innerHTML=c;
+      document.body.appendChild(h1);
+    }
+      function multiply(){
+      var g= document.getElementById("g").value;
+      var d =document.getElementById("d").value;
+      var e=parseInt(g) * parseInt(d);
+      var h2=document.createElement("h2");
+      h2.innerHTML=e;
+      document.body.appendChild(h2); 
+    }
+    function divide(){
+      var x= document.getElementById("x").value;
+      var y =document.getElementById("y").value;
+      var z=parseInt(x) * parseInt(y);
+      var h2=document.createElement("h2");
+      h2.innerHTML=z;
+      document.body.appendChild(h2); 
+    }
+</body>
+</html'[]>
